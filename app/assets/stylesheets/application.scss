@@ -1,0 +1,168 @@
+@import 'bootstrap';
+@import 'font-awesome.css';
+
+$width: 1020px;
+
+$bg-primary: #f9f8f0;
+
+$c-label:    #aaa;
+$c-light:    #666;
+$c-link:     #2a8bcc;
+$c-link-hov: #148827;
+
+$border: 1px solid #ccc;
+
+$font-s:   .8em;
+$font-l:  1.3em;
+$font-xl: 1.8em;
+
+
+
+// Utils
+
+.clickable {
+  cursor: pointer;
+}
+
+.main-width {
+  margin: 0 auto;
+  max-width: $width;
+}
+
+.nowrap {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.expand {
+  flex-grow: 100;
+}
+
+.d-flex-v {
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-right {
+  align-items: flex-end;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.link {
+  color: $c-link;
+  transition: color 200ms;
+
+  &:hover {
+    color: $c-link-hov;
+  }
+}
+
+// Colors
+
+.c-label {
+  color: $c-label;
+}
+
+.c-light {
+  color: $c-light;
+}
+
+// Font rules
+
+.fs-s {
+  font-size: $font-s;
+}
+
+.fs-l {
+  font-size: $font-l;
+}
+
+.font-secondary {
+  font-family: Marck Script;
+  line-height: 0.8em;
+}
+
+.fs-xl {
+  font-size: $font-xl;
+}
+
+
+// Header
+
+.header-container {
+  background: white;
+}
+
+.header {
+  font-size: 1.1em;
+  font-weight: 100;
+
+  .nav {
+    display: flex;
+    font-weight: 100;
+  }
+
+  .nav-item {
+    font-size: $font-l;
+    margin: 6px 0;
+  }
+}
+
+.logo-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  height: 300px;
+}
+
+
+// Footer
+
+.footer-container {
+  background: #31404a;
+  color: #ccc;
+  font-weight: 100;
+  min-height: 120px;
+}
+
+
+// Content
+
+.content {
+  min-height: 500px;
+}
+
+// Common
+
+body {
+  background-attachment: fixed;
+  background-image: url('/img/pad.png');
+  background-size: 80px;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,28 @@
+footer.footer-container
+  .main-width
+    .footer.mx-3.py-4.d-flex.jc-sb.ai-center
+      .footer-col.mr-4
+        .nowrap
+          i.fa.fa-copyright
+          = " Твори Добро 2018 – #{Time.current.year}"
+        .d-flex.mt-2.fs-l
+          = link_to "https://vk.com" do
+            i.fa.fa-vk
+          = link_to "https://odnoklassniki.ru", class: "ml-3" do
+            i.fa.fa-odnoklassniki
+          = link_to "https://telegram.me", class: "ml-3" do
+            i.fa.fa-telegram
+          = link_to "https://twitter.com", class: "ml-3" do
+            i.fa.fa-twitter
+          = link_to "https://facebook.com", class: "ml-3" do
+            i.fa.fa-facebook-square
+          = link_to "https://instagram.com", class: "ml-3" do
+            i.fa.fa-instagram
+
+      .footer-col.d-flex.flex-wrap
+        =link_to "Новости", :root, class: "mx-4"
+        =link_to "Контакты", 'contacts', class: "mx-4"
+        =link_to "О нас",    'about', class: "mx-4"
+
+      .footer-col.nowrap.ml-4
+        a href="tel:+70000000000" +7 (000) 000-00-00

@@ -1,0 +1,24 @@
+header
+  .header-container
+    .main-width
+      .header.mx-3.d-flex
+        .mr-2.nowrap
+          =link_to :root do
+            .logo-container.my-3
+              = image_tag "/img/logo.png", class: "logo"
+        .expand.d-flex-v.jc-sb
+          .d-flex.jc-center.ai-center.my-5.c-light.fs-l
+            .text-right.mx-4
+              div БЛАГОТВОРИТЕЛЬНЫЙ ФОНД
+              div.fs-s.c-label Марии Малышевской
+            .text-left.mx-3
+              div.font-secondary.fs-xl Твори Добро
+              div.fs-s.c-label твори-добро.рф
+          .d-flex
+            .expand.text-center.my-3
+              a href="tel:+70000000000" +7 (000) 000-00-00
+
+            ul.nav.d-flex-v.ai-right.my-2
+              =link_to "Новости", :root, class: "nav-item link"
+              =link_to "Контакты", 'contacts', class: "nav-item link"
+              =link_to "О нас",    'about', class: "nav-item link"
