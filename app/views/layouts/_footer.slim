@@ -6,18 +6,7 @@ footer.footer-container
           i.far.fa-copyright
           = " Твори Добро 2018 – #{Time.current.year}"
         .d-flex.mt-2.fs-l
-          = link_to "https://vk.com" do
-            i.fab.fa-vk
-          = link_to "https://odnoklassniki.ru", class: "ml-3" do
-            i.fab.fa-odnoklassniki
-          = link_to "https://telegram.me", class: "ml-3" do
-            i.fab.fa-telegram
-          = link_to "https://twitter.com", class: "ml-3" do
-            i.fab.fa-twitter
-          = link_to "https://facebook.com", class: "ml-3" do
-            i.fab.fa-facebook-square
-          = link_to "https://instagram.com", class: "ml-3" do
-            i.fab.fa-instagram
+          = render "layouts/socials"
 
       .footer-col.d-flex.flex-wrap
         =link_to "Новости", :root, class: "mx-4"
@@ -26,3 +15,5 @@ footer.footer-container
 
       .footer-col.nowrap.ml-4
         a href="tel:+70000000000" +7 (000) 000-00-00
+        br
+        a href="mailto:example@mail.com" example@mail.com
