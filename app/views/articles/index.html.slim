@@ -1,0 +1,14 @@
+h2 Список новостей
+
+- @articles.each do |article|
+  .card.p-3.my-3
+    .md = markdown.render(article.preview).html_safe
+    div
+      = link_to 'Просмотр', article, class: "mr-2 link"
+      = link_to 'Редактировать', edit_article_path(article), class: "mr-2 link"
+      = link_to 'Удалить', article, data: { confirm: 'Are you sure?' },
+        method: :delete, class: "link"
+
+br
+
+= link_to 'Создать новость', new_article_path, class: "link"

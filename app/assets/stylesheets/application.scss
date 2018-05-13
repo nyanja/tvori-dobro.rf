@@ -71,6 +71,11 @@ $font-xl: 1.8em;
   }
 }
 
+.sheet {
+  background: white;
+  box-shadow: 0 0 18px rgba(0,0,0,0.03);
+}
+
 // Colors
 
 .c-label {
@@ -93,7 +98,7 @@ $font-xl: 1.8em;
 
 .font-secondary {
   font-family: Marck Script;
-  line-height: 0.8em;
+  line-height: 0.84em;
 }
 
 .fs-xl {
