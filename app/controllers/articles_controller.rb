@@ -1,5 +1,9 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  if Rails.env.production?
+    http_basic_authenticate_with  name: ENV['USERNAME'],
+                                  password: ENV['PASSWORD']
+  end
 
   # GET /articles
   def index
