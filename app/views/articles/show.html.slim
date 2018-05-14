@@ -14,12 +14,17 @@ p
   span.c-label =< request.base_url + "/"
   = @article.slug
 p
+  strong Позиция:
+  =< @article.position
+p
   strong Краткая версия:
-  .card.p-3.md = render_md @article.preview
+  .card.p-3
+    .md = render_md @article.preview
 p
   strong Полная версия:
-  .card.p-3.md = render_md @article.content
+  .md = render_md @article.content
 
+hr
 
 => link_to 'Редактировать', edit_article_path(@article), class: :link
 '|

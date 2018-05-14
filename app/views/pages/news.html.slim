@@ -1,2 +1,13 @@
-h1 Pages#news
-p Find me in app/views/pages/news.html.slim
+- provide :description, "Твори Добро – Благотворительный фонд Марии Малышевской"
+- provide :title, "Твори Добро – Благотворительный фонд Марии Малышевской"
+
+p Lorem ipsum dolor sit amet consectetur adipiscing elit orci, euismod duis placerat torquent ornare volutpat varius posuere porttitor, habitant ut magnis arcu facilisi himenaeos proin. Felis primis vulputate inceptos tristique placerat nam elementum ac proin, nisi sagittis neque dictumst dapibus praesent non quisque volutpat conubia, faucibus purus eu nullam enim penatibus sapien per. Himenaeos sem orci quis tristique malesuada netus, sociis magnis dictum nisi et, lobortis enim faucibus natoque dui.
+
+br
+
+h1.h3.c-light Новости благотворительного фонда "Твори Добро":
+
+- @articles.each do |article|
+  =link_to "/#{article.slug}" do
+    .card.p-3.my-3.md
+      = render_md article.preview

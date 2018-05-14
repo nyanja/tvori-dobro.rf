@@ -105,6 +105,10 @@ $font-xl: 1.8em;
   font-size: $font-xl;
 }
 
+.fw-1 {
+  font-weight: 100;
+}
+
 
 // Header
 
@@ -151,8 +155,32 @@ $font-xl: 1.8em;
 // Content
 
 .content {
-  min-height: 500px;
+  min-height: 600px;
 }
+
+
+// Markdown
+
+.md {
+  overflow: hidden;
+
+  img {
+    border-radius: 2px;
+    display: block;
+    float: left;
+    margin-bottom: 14px;
+    margin-right: 24px;
+    margin-top: 14px;
+    max-height: 30em;
+    max-width: 40%;
+  }
+
+  clear {
+    clear: both;
+    display: block;
+  }
+}
+
 
 // Common
 

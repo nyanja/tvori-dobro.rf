@@ -2,6 +2,8 @@ h2 Список новостей
 
 - @articles.each do |article|
   .card.p-3.my-3
+    - if p = article.position
+      strong.c-label = "##{p}"
     .md = render_md article.preview
     div
       = link_to 'Просмотр', article, class: "mr-2 link"
