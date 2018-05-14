@@ -2,23 +2,25 @@ p#notice = notice
 
 p
   strong Title:
-  = @article.title
+  =< @article.title
 p
   strong Description:
-  = @article.description
+  =< @article.description
 p
   strong Keywords:
-  = @article.keywords
+  =< @article.keywords
 p
-  strong Preview:
-  = @article.preview
-p
-  strong Content:
-  = @article.content
-p
-  strong Slug:
+  strong Ссылка:
+  span.c-label =< request.base_url + "/"
   = @article.slug
+p
+  strong Краткая версия:
+  .card.p-3.md = render_md @article.preview
+p
+  strong Полная версия:
+  .card.p-3.md = render_md @article.content
 
-=> link_to 'Edit', edit_article_path(@article)
+
+=> link_to 'Редактировать', edit_article_path(@article), class: :link
 '|
-=< link_to 'Back', articles_path
+=< link_to 'Список новостей', articles_path, class: :link
