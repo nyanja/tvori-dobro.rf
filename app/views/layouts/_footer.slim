@@ -1,19 +1,19 @@
 footer.sheet.footer-container
   .main-width
     .footer.mx-3.py-4.d-flex.jc-sb.ai-center
-      .footer-col.mr-4
+      .footer-col
         .nowrap
           i.far.fa-copyright
           = " Твори Добро 2018 – #{Time.current.year}"
         .d-flex.mt-2.fs-l.jc-center
           = render "layouts/socials"
 
-      .footer-col.d-flex.flex-wrap
-        =link_to "Новости", :root, class: "mx-4"
-        =link_to "Контакты", 'contacts', class: "mx-4"
-        =link_to "О нас",    'about', class: "mx-4"
+      .footer-col.d-flex.flex-wrap.mx-4.jc-center
+        =link_to "Новости", :root, class: "mx-4 my-1"
+        =link_to "Контакты", 'contacts', class: "mx-4 my-1"
+        =link_to "О нас",    'about', class: "mx-4 my-1"
 
-      .footer-col.nowrap.ml-4.text-center
+      .footer-col.nowrap.text-center
         a href="tel:+70000000000" +7 (000) 000-00-00
         br
         a href="mailto:example@mail.com" example@mail.com

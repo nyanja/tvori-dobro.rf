@@ -4,24 +4,26 @@ header
       .header.mx-3.d-flex
         .mr-2.nowrap
           =link_to :root do
-            .logo-container.my-3
-              = image_tag "/img/logo.png", class: "logo"
-        .expand.d-flex-v.jc-sb
-          .d-flex.jc-center.ai-center.my-5.c-light.fs-l
-            .text-right.mx-4
-              div БЛАГОТВОРИТЕЛЬНЫЙ ФОНД
-              div.fs-s.c-label Марии Малышевской
-            .text-left.mx-3
-              div.font-secondary.fs-xl Твори Добро
-              div.fs-s.c-label твори-добро.рф
+            .my-3
+              = image_tag "/img/logo.png", class: "header_logo"
+        .expand.d-flex-v
+          .header_title.d-flex.jc-center.ai-center.mt-5.c-light.fs-l
+            .header_title-left.text-right.mx-4
+              .nowrap БЛАГОТВОРИТЕЛЬНЫЙ ФОНД
+              .nowrap.fs-s.c-label Марии Малышевской
+            .header_title-right.text-left.mx-3
+              .nowrap.font-secondary.fs-xl Твори Добро
+              .nowrap.fs-s.c-label твори-добро.рф
+          .expand
           .d-flex
-            .expand.my-3.text-center
-              .fs-l
+            .expand
+            .header_contacts.my-3.text-center.fs-l
+              div
                 a href="tel:+70000000000" +7 (000) 000-00-00
               .d-inline-block.mt-2.c-light
                 = render "layouts/socials"
-
-            ul.nav.d-flex-v.ai-right.my-2
+            .expand
+            ul.header_nav.d-flex-v.ai-right.my-2
               =link_to "Новости", :root, class: "nav-item link"
               =link_to "Контакты", '/contacts', class: "nav-item link"
               =link_to "О нас",    '/about', class: "nav-item link"

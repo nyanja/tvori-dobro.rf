@@ -2,5 +2,5 @@
    ["twitter.com", "fa-twitter"],
    ["facebook.com", "fa-facebook-square"],
    ["instagram.com", "fa-instagram"]].each do |(url, klass)|
-   =link_to "https://#(url)", class: "mx-1" do
+   =link_to "https://#{url}", class: "mx-1" do
      i.fab class=klass rel="nofollow"
