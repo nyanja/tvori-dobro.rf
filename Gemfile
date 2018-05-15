@@ -15,7 +15,7 @@ gem 'simple_form'
 gem 'bootstrap'
 gem 'uglifier'
 gem 'turbolinks'
-gem 'jquery-rails'
+gem 'jquery-rails', '4.2'
 gem 'redcarpet'
 
 group :development, :test do
