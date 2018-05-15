@@ -14,7 +14,7 @@ gem 'slim-rails'
 gem 'simple_form'
 gem 'bootstrap'
 gem 'uglifier'
-gem 'turbolinks'
+# gem 'turbolinks'
 gem 'jquery-rails', '4.2'
 gem 'redcarpet'
 
