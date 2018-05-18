@@ -5,9 +5,10 @@ $width: 1020px;
 $bg-primary: #f9f8f0;
 
 $c-label:    #aaa;
-$c-light:    #666;
-$c-link:     #2a8bcc;
-$c-link-hov: #148827;
+$c-light:    #777;
+$c-blue:     #2a8bcc;
+$c-green:    #148827;
+$c-red:      #f31f00;
 
 $border: 1px solid #ccc;
 
@@ -63,11 +64,11 @@ $font-xl: 1.8em;
 }
 
 .link {
-  color: $c-link;
+  color: $c-blue;
   transition: color 200ms;
 
   &:hover {
-    color: $c-link-hov;
+    color: $c-green;
   }
 }
 
@@ -84,6 +85,14 @@ $font-xl: 1.8em;
 
 .c-light {
   color: $c-light;
+}
+
+.c-red {
+  color: $c-red;
+}
+
+.ceen {
+  color: $c-green;
 }
 
 // Font rules
@@ -109,6 +118,9 @@ $font-xl: 1.8em;
   font-weight: 100;
 }
 
+.fw-4 {
+  font-weight: 400;
+}
 
 // Header
 
