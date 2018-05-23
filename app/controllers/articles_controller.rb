@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   if Rails.env.production?
     http_basic_authenticate_with  name: 'usr',
-                                  password: PASSWORD
+                                  password: Rails.application.secrets.PASSWORD
   end
 
   # GET /articles
