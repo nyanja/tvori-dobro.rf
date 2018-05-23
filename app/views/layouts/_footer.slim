@@ -14,7 +14,7 @@ footer.sheet.footer-container
         =link_to "О нас",    'about', class: "mx-4 my-1"
 
       .footer-col.nowrap.text-center
-        a href="tel:+70000000000" +7 (000) 000-00-00
+        a href="tel:#{site_phone}" = site_phone
         br
-        a href="mailto:example@mail.com" example@mail.com
+        a href="mailto:#{site_mail}" = site_mail
         .small.fw-1.c-label.mt-1 разработка Nyan Cat
