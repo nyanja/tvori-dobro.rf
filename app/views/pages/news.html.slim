@@ -9,5 +9,5 @@ h1.h3.c-light Новости благотворительного фонда "Т
 
 - @articles.each do |article|
   =link_to "/#{article.slug}" do
-    .card.p-3.my-3.md
+    .p-3.my-3.md
       = render_md article.preview
