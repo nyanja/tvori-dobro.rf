@@ -13,7 +13,7 @@ $c-red:      #f31f00;
 $border: 1px solid #ccc;
 
 $font-s:   .8em;
-$font-l:  1.3em;
+$font-l:  1.2em;
 $font-xl: 1.8em;
 
 
@@ -147,6 +147,9 @@ $font-xl: 1.8em;
   height: 300px;
 }
 
+.header_title-image {
+  width: 12rem;
+}
 
 // Footer
 
@@ -219,8 +222,8 @@ a:hover {
 }
 
 @media (max-width: 859.98px) {
-  .header_title {
-    font-size: 0.94em;
+  .header_title-left {
+    display: none;
   }
 
   .header_logo {
