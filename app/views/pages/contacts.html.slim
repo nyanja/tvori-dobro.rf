@@ -1,2 +1,27 @@
-h1 Pages#contacts
-p Find me in app/views/pages/contacts.html.slim
+-content_for :title do
+  | Контакты благотворительного фонда "Твори Добро"
+
+h1.h2 Контактная информация
+.mx-auto.d-inline-block
+p Благотворительный фонд "Твори добро" - молодая организация, мы сами учимся, мы открыты вашим идеям и предложениям.
+p Приглашаем присоединиться к нам всех, кто разделяет желание помогать детям и молодежи, делать наш мир более счастливым и добрым!
+p
+  |Вы можете написать в
+  =<> link_to "личном сообщении", "https://vk.com/mmalyshevskaya", class: :link
+  |свои предложения и пожелания, буду рада получить обратную связь.
+p С уважением, Мария Малышевская
+
+br
+br
+table
+  tr
+    td.pr-3 Контактный телефон:
+    td
+       a.link href="tel:#{site_phone}" = site_phone
+  tr
+    td Группа в VK:
+    td = link_to "vk.com/tvori_dobro_sev", "https://vk.com/tvori_dobro_sev", class: :link
+  tr
+    td Email:
+    td
+      a.link href="mailto:#{site_mail}" = site_mail
